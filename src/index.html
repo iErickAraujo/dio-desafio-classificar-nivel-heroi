@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="container">
+      <h2>Insira o nome e a experiência do jogador</h2>
+      <form id="playerForm">
+        Nome:<br />
+        <input type="text" id="nome" name="nome" minlength="3" required />
+        <br />
+        Experiência:<br />
+        <input type="number" id="xp" name="xp" min="0" required />
+        <br /><br />
+        <div class="container-btn">
+          <input type="button" value="Enviar" onclick="submitForm()" />
+        </div>
+      </form>
+      <h2 id="info-player"></h2>
+    </div>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
